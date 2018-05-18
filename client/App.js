@@ -1,3 +1,4 @@
+import { Meteor } from 'meteor/meteor';
 import React from 'react';
 import {Checkbox, Header, Segment, Button, Icon, Container} from 'semantic-ui-react';
 import {withTracker} from 'meteor/react-meteor-data';
@@ -5,14 +6,14 @@ import { Mongo } from 'meteor/mongo';
 
 /*const Todos = new Mongo.Collection('todos');*/
 import { Todos } from '../imports/api/todos';
-
+console.log(Todos);
 const items = [
 	{_id: 1, done: false, title: 'One'},
-	{_id: 2, done: false, title: 'Two'},
+	{_id: 2, done: true, title: 'Two'},
 ]
 
 const items2 = [
-	{_id: 1, done: false, title: 'One'},
+	{_id: 1, done: true, title: 'One'},
 	{_id: 2, done: false, title: 'Two'},
 ]
 
